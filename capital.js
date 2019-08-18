@@ -18,6 +18,21 @@ $(function () {
         })
 
     })
+
+        ;
+
+    $("#capitalCitySearch").on("keyup", function (event) {
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            $("#searchByCapital").click();
+        }
+    });
+
+
+
+
+
+
 })
 
 function draw(array) {
